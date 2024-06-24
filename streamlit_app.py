@@ -41,8 +41,8 @@ if ingredients_list:
     
     if time_to_insert:
         session.sql(my_insert_stmt).collect()
-        #st.success('You Smoothie is orderde!',icon="✅")
-        st.success('You Smoothie is ordered:,name_on_order',icon="✅")
+        #st.success('Your Smoothie is orderde!',icon="✅")
+        st.success('Your Smoothie is ordered,' + name_on_order,icon="✅")
 
 #New section to display fruityvice nutrition information
 import requests
